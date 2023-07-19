@@ -98,11 +98,14 @@
             </div>
         </div>
     </div>
+
+    {{-- Final Report --}}
+
     <div class="row">
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Final Report</h3>
+                    <h3 class="card-title"><strong>Final Report</strong></h3>
                 </div>
                 <div class="card-body">
                     <table class="table table-bordered">
@@ -161,7 +164,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title"><strong>Balance Entity Report</strong></h3>
+                    <h3 class="card-title"><strong>Transection Source Report</strong></h3>
                 </div>
                 <div class="card-body">
                     <table class="table table-bordered">
@@ -318,10 +321,7 @@
                                 <td><strong>#</strong></td>
                                 <td><strong>Account Type</strong></td>
                                 <td class="w-25">
-                                    <center><strong>Credit</strong></center>
-                                </td>
-                                <td>
-                                    <center><strong>Debit</strong></center>
+                                    <center><strong>Spent</strong></center>
                                 </td>
                                 <td>
                                     <center><strong>Balance</strong></center>
@@ -329,22 +329,19 @@
                             </tr>
                             <tr>
                                 <td><strong>1.</strong></td>
-                                <td>Cash</td>
-                                <td>{{ $accountReport['cashCredit'] }}</td>
+                                <td><strong>Cash</strong>&nbsp; <i class="fas fa-money-bill-wave"></i></td>
                                 <td>{{ $accountReport['cashDebit'] }}</td>
                                 <td>{{ $accountReport['cashBalance'] }}</td>
                             </tr>
                             <tr>
                                 <td><strong>2.</strong></td>
-                                <td>Paytm Wallet</td>
-                                <td>{{ $accountReport['pwCredit'] }}</td>
+                                <td><strong>Paytm Wallet</strong>&nbsp; <i class="fas fa-wallet"></i></td>
                                 <td>{{ $accountReport['pwDebit'] }}</td>
                                 <td>{{ $accountReport['pwBalance'] }}</td>
                             </tr>
                             <tr>
                                 <td><strong>3.</strong></td>
-                                <td>Paytm Payments Bank</td>
-                                <td>{{ $accountReport['ppbCredit'] }}</td>
+                                <td><strong>Paytm Payments Bank</strong>&nbsp; <i class="fas fa-piggy-bank"></i></td>
                                 <td>{{ $accountReport['ppbDebit'] }}</td>
                                 <td>{{ $accountReport['ppbBalance'] }}</td>
                             </tr>
